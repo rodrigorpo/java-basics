@@ -9,16 +9,13 @@ public class PhysicalPurchase extends Purchase {
     }
 
     @Override
-    public Purchase purchase() {
-        attendCostumer();
+    public void purchase() {
+        attendCustomer();
         receivePayment();
-
         System.out.println("Success physical purchasing");
-
-        return this;
     }
 
-    private void attendCostumer() {
+    private void attendCustomer() {
         System.out.println("Do some attendant's logic here");
     }
 

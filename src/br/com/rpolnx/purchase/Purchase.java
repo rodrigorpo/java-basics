@@ -43,7 +43,7 @@ public abstract class Purchase {
         private BigDecimal price;
     }
 
-    public abstract Purchase purchase();
+    public abstract void purchase();
 
     protected BigDecimal getAllPrice() {
         return this.items.stream()

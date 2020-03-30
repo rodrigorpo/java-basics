@@ -18,14 +18,11 @@ public class OnlinePurchase extends Purchase {
         this.paymentApi = new PaymentApi();
     }
 
-    public Purchase purchase() {
-
-
+    public void purchase() {
         this.paymentApi.realizePayment(value);
 
         System.out.println("Success purchasing online");
 
-        return this;
     }
 
     @Override
